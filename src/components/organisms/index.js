@@ -1,5 +1,3 @@
 export{default as Header} from './Header.vue'
 export{default as Hero} from './Hero.vue'
-export{default as Sobre} from './Sobre.vue'
-export{default as Projetos} from './Projetos.vue'
-export{default as Skills} from './Skills.vue'
+export{default as ItemProjeto} from './ItemProjeto.vue'
