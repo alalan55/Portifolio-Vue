@@ -5,8 +5,11 @@
       <CapaTemplate />
       <SobreTemplate />
       <ProjetosTemplate :projetos="projetos" />
+      <ServicosTemplate/>
       <SkillsTemplate />
+      <ContatoTemplate/>
     </Container>
+    <Footer/>
   </div>
 </template>
 
@@ -16,9 +19,11 @@ import {
   SobreTemplate,
   ProjetosTemplate,
   SkillsTemplate,
+  ServicosTemplate,
+  ContatoTemplate
 } from "@/components/templates";
 import { Container } from "@/components/bosons";
-import { Header } from "@/components/organisms";
+import { Header, Footer } from "@/components/organisms";
 
 export default {
   components: {
@@ -26,8 +31,11 @@ export default {
     CapaTemplate,
     SobreTemplate,
     ProjetosTemplate,
+    ServicosTemplate,
     SkillsTemplate,
+    ContatoTemplate,
     Container,
+    Footer
   },
 
   data(){

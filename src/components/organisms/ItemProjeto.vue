@@ -1,14 +1,24 @@
 <template>
   <li class="projeto" v-for="projeto in projetos" :key="projeto.id">
     <div class="textos-projeto">
-      <span class="title"> {{projeto.name}}</span>
+      <span class="title"> {{ projeto.name }}</span>
       <div class="descricao">
-        {{projeto.description}}
+        {{ projeto.description }}
       </div>
     </div>
     <div class="btns">
-      <a :href="projeto.homepage" @click="go(projeto.homepage)" class="btn-live" v-if="projeto.homepage" target="_blank">Ver live <i class="fab fa-chrome"></i></a>
-      <a href="#" class="btn-git" target="_blank" v-if="projeto.svn_url"
+      <a
+        @click="goLive(projeto.homepage)"
+        class="btn-live"
+        v-if="projeto.homepage"
+        target="_blank"
+        >Ver live <i class="fab fa-chrome"></i
+      ></a>
+      <a
+        @click="goHub(projeto.html_url)"
+        class="btn-git"
+        target="_blank"
+        v-if="projeto.svn_url"
         >Ver no fighub <i class="fab fa-github"></i
       ></a>
     </div>
@@ -17,14 +27,17 @@
 
 <script>
 export default {
-    props:{
-        projetos:{type: Array, default: () => []}
+  props: {
+    projetos: { type: Array, default: () => [] },
+  },
+  methods: {
+    goHub(e) {
+      window.open(`${e}`, "_blank");
     },
-    methods:{
-        go(e){
-            console.log(e)
-        }
-    }
+    goLive(home) {
+      window.open(`https://${home}`, "_blank");
+    },
+  },
 };
 </script>
 
@@ -42,6 +55,7 @@ export default {
   background: $preto2;
 
   .textos-projeto {
+    flex: 1 1 auto;
     .title {
       font-weight: 500;
       font-size: 1.5rem;
@@ -54,6 +68,10 @@ export default {
   }
 
   .btns {
+    flex: 1 1 300px;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
     & > a {
       text-decoration: none;
       margin: 0 0.3rem;
@@ -65,6 +83,7 @@ export default {
       padding: 1rem 1rem;
       color: white;
       border-radius: 5px;
+      cursor: pointer;
 
       &:hover {
         background: $verde-hover;
@@ -76,6 +95,7 @@ export default {
       padding: 1rem 1rem;
       color: white;
       border-radius: 5px;
+      cursor: pointer;
 
       &:hover {
         background: $blue-hover;
@@ -85,8 +105,9 @@ export default {
 }
 
 @media screen and (max-width: 732px) {
-    .btns {
-      margin: 1.8rem 0;
-    }
+  .btns {
+    justify-content: flex-start !important;
+    margin: 1.8rem 0;
+  }
 }
 </style>

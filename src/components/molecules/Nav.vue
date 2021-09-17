@@ -5,10 +5,10 @@
     </div>
     <div class="links">
       <NavLink to="sobre" nomeRota="sobre"  class="link"/>
-      <NavLink to="teste" nomeRota="projetos"  class="link"/>
-      <NavLink to="teste" nomeRota="serviços" class="link" />
-      <NavLink to="teste" nomeRota="skills"  class="link"/>
-      <NavLink to="teste" nomeRota="contato"  class="link"/>
+      <NavLink to="projetos" nomeRota="projetos"  class="link"/>
+      <NavLink to="servicos" nomeRota="serviços" class="link" />
+      <NavLink to="skills" nomeRota="skills"  class="link"/>
+      <NavLink to="contato" nomeRota="contato"  class="link"/>
     </div>
   </nav>
 </template>

@@ -13,7 +13,6 @@
     <div class="container-projetos">
       <ul>
         <ItemProjeto :projetos="projetos"/>
-
       </ul>
     </div>
   </div>
