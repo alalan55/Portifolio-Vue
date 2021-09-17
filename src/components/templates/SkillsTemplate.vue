@@ -1,5 +1,5 @@
 <template>
-  <div class="skills">
+  <div class="skills" id="skills">
     <div class="title-skill">
       <span>Algumas de minhas Skills</span>
     </div>
@@ -20,6 +20,7 @@ export default {};
 
 <style lang="scss" scoped>
 .skills {
+  margin-top: 2.5rem ;
   padding: 0.5rem 0;
   text-align: center;
   color: $branco;
@@ -40,7 +41,7 @@ export default {};
 
     .skill {
       flex: 1 1 auto;
-      margin: .2rem;
+      margin: 0.2rem;
       width: 100px;
       height: 100px;
       display: flex;
@@ -48,9 +49,15 @@ export default {};
       justify-content: center;
       background: $preto2;
       border: 1px solid #333333;
+      transition: .2s ease-in-out;
       i {
         color: $verde;
         font-size: 3rem;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+         background: $preto3;
       }
     }
   }
