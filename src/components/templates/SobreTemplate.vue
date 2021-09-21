@@ -5,11 +5,9 @@
     </div>
     <div class="desc-sobre">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque
-        rerum numquam eum tenetur repellat, molestiae a et? Ab doloribus ut
-        harum debitis dolor odit totam nesciunt, hic sit at. Atl Possimus eaque
-        rerum numquam eum tenetur repellat, molestiae a et? Ab doloribus ut
-        harum debitis dolor odit totam nesciunt, hic sit at
+        Olá, prazer, me chamo Alan de Oliveira, tenho 23 anos e sou um
+        desenvolvedor front-end que tem amor pela tecnologia, atuando na área
+        desde 2020, venho acumulando experiências a cada dia que passa. Atualmente trabalhando com o framework VueJs <i class="far fa-heart"></i>
       </p>
     </div>
 
@@ -32,7 +30,7 @@
         <div class="text-icon">
           <span class="title-text-icon">E-mail</span>
           <br />
-          <span class="desc-text-icon">email@email.com</span>
+          <span class="desc-text-icon">alla.ao4975@gmail.com</span>
         </div>
       </div>
 
@@ -43,7 +41,7 @@
         <div class="text-icon">
           <span class="title-text-icon">Linkedin</span>
           <br />
-          <span class="desc-text-icon">meuLinkedinAqui</span>
+          <span class="desc-text-icon"><a href="https://www.linkedin.com/in/alan-oliveira-a606b31b2/" target="_blank">Alan Oliveira</a></span>
         </div>
       </div>
 
@@ -54,7 +52,7 @@
         <div class="text-icon">
           <span class="title-text-icon">GitHub</span>
           <br />
-          <span class="desc-text-icon">@alalan55</span>
+          <span class="desc-text-icon"><a href="https://github.com/alalan55" target="_blank">@alalan55</a></span>
         </div>
       </div>
     </div>
@@ -100,7 +98,7 @@ export default {};
     justify-content: space-between;
 
     .icon-link {
-     // flex: 0 0 200px;
+      // flex: 0 0 200px;
 
       margin-top: 1rem;
       display: flex;
@@ -117,8 +115,8 @@ export default {};
         justify-content: center;
         margin-bottom: 1rem;
 
-        i{
-            color: $verde;
+        i {
+          color: $verde;
         }
       }
       .text-icon {
@@ -130,6 +128,11 @@ export default {};
           color: $cinza;
           font-size: 12px;
           display: block;
+
+          a{
+            text-decoration: none;
+            color: $cinza;
+          }
         }
       }
     }
@@ -137,20 +140,19 @@ export default {};
 }
 
 @media screen and (max-width: 516px) {
+  .sobre {
+    height: auto;
 
-    .sobre{
-        height: auto;
+    .icones {
+      align-items: center;
 
-        .icones {
-          align-items: center;
-      
-          .icon-link {
-            width: 100% !important;
-            flex: 1 1 auto;
-            align-items: center;
-            justify-content: center;
-          }
-        }
+      .icon-link {
+        width: 100% !important;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: center;
+      }
     }
+  }
 }
 </style>

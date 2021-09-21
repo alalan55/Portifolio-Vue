@@ -11,8 +11,8 @@
         <span>Desenvolvedor front-end</span>
       </div>
       <div class="btns">
-        <button class="btn-cv">Dowload CV</button>
-        <button class="btn-ctt">Fale Comigo</button>
+        <a class="btn-cv" href="@/assets/Curriculo.pdf" download="">Dowload CV</a>
+        <a class="btn-ctt" href="#contato">Fale Comigo</a>
       </div>
     </div>
     <div class="hero-direito">
@@ -57,8 +57,9 @@ margin: 0.7rem 0;
       }
     }
     .btns {
-      & > button {
-        
+      & > a {
+        text-decoration: none;
+        color: white;
         padding: 0.8rem 1.5rem;
         border: none;
         border-radius: 0;
@@ -68,12 +69,22 @@ margin: 0.7rem 0;
       }
       .btn-cv {
         background: $verde;
+        transition: .3s ease-in-out;
+
+        &:hover{
+          background: $verde-hover;
+        }
       }
       .btn-ctt {
         margin-left: 1rem;
         background: none;
         border: 1px solid $cinza;
         color: $branco;
+        transition: .3s ease-in-out;
+
+        &:hover{
+          background: $cinza;
+        }
       }
     }
   }
