@@ -1,5 +1,5 @@
 <template>
-    <footer>Feito com <i class="far fa-heart"></i> por <a href="">Y0SHYYY</a></footer>
+    <footer>Feito com <i class="far fa-heart"></i> por <a href="https://github.com/alalan55" target="_blank">Y0SHYYY</a></footer>
 </template>
 
 <script>

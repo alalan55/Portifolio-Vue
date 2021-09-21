@@ -6,7 +6,7 @@
 
     <div class="descricao-projetos">
       <span
-        >Últimos projetos upados no <a href="#" target="_blank">GitHub</a></span
+        >Últimos projetos upados no <a href="https://github.com/alalan55" target="_blank">GitHub</a></span
       >
     </div>
 
