@@ -54,7 +54,6 @@ export default {
         this.projetos = res
         
       } catch (error) {
-        console.log('cai no catch',process.env.VUE_APP_URL)
         console.error(error)
       }
     }
