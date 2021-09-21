@@ -69,6 +69,13 @@ nav {
 @media screen and (max-width: 640px) {
   nav {
     padding: 0 0.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    z-index: 9;
+    background: $preto1;
+    border-bottom: 1px solid $preto2;
     .links {
       z-index: 10;
       position: absolute;
